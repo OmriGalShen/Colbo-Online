@@ -1,0 +1,64 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  width: 80%;
+}
+.settings-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3em;
+  border: 3px solid black;
+  width: 80%;
+  min-height: 80vh;
+  color: white;
+  background: rgba(3, 18, 39, 0.5);
+}
+
+.settings-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.settings-title {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "Raleway", sans-serif;
+  text-decoration: underline;
+}
+
+.settings-description {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+}
+
+.setting-list {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .settings {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 0;
+  }
+  .setting-list {
+    width: 90vw;
+  }
+  .settings-panel {
+    min-height: 90vh;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}
